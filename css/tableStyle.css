@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FEF1E6;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    background: #000000;
+    width: 100%;
+    height: 12%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 70px;
+}
+.logo{
+    margin-right: auto;
+    width: 138px;
+    height: 85px;
+}
+
+div.nigger-flex {
+    background-image: url("../images/akira-hojo-ZxGdri2EWzk-unsplash.jpg") ;
+    width: 100%;
+}
+.nav-area{
+    list-style: none;
+}
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.nav-area li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav-area li a:hover{
+    color: #E0772B;
+}
+
+p {
+    text-align: justify;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul.nav-area {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 12%;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul.nav-area li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul.nav-area li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+.main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 788px;
+    height: 353px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#header {
+    background-color: #000000;
+    color: #fff;
+}
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+    background-color: #16a085;
+    color: #ffffff;
+    padding: 10px 0px;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 988px) {
+    table {
+        width: 90%;
+    }
+}
+
